@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/quizIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginEnd="90dp"
+        android:src="@drawable/quiz"
+        />
+
+    <TextView
+        android:id="@+id/chooseTopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_below="@+id/quizIcon"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="#99FFFFFF"
+        android:text="Choose Topic:"
+        android:textStyle="bold"
+        />
+
+
+    <!-- first card  -->
+    <LinearLayout
+        android:id="@+id/fastLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chooseTopic"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/javaLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/background_white"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="20dp"
+            android:layout_marginEnd="5dp"
+            >
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/java"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Java"
+                android:textColor="#CC000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/phpLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/background_white"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="20dp"
+            android:layout_marginStart="5dp"
+            >
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/php"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Php"
+                android:textColor="#CC000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- first card  end-->
+
+    <!-- Second card  -->
+
+    <LinearLayout
+        android:id="@+id/secondLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fastLayout"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/htmlLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/background_white"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="20dp"
+            android:layout_marginEnd="5dp"
+            >
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/html"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Html"
+                android:textColor="#CC000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/pythonLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/background_white"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="20dp"
+            android:layout_marginStart="5dp"
+            >
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/python"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Python"
+                android:textColor="#CC000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Second card end -->
+
+
+
+    <!-- Start Button start -->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/quizStartBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondLayout"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_backgroun"
+        android:textColor="#ffffff"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Start Quiz"
+        android:textSize="18dp"
+        android:textStyle="bold">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+
+
+    <!-- Start Button end -->
+
+
+
+
+</RelativeLayout>
